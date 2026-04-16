@@ -1,0 +1,98 @@
+/* Reset dasar */
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px; /* sesuaikan tinggi header */
+}
+
+/* Header */
+header {
+    background-color: #ce3e92;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navigasi */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+    padding-right: 20px;
+    border-right: 1px dotted #f9f9f9;
+}
+
+header nav ul li:last-child {
+    border-right: none; /* Lebih rapi daripada inline style di HTML */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    font-weight: bold;
+}
+
+/* Section umum */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Menu (perubahan 1)
+.menu-item img {
+    max-width: 40%;
+    border-radius: 10px;
+}*/
+.menu-item img {
+    max-width: 40%;
+    border-radius: 20px; /* lebih rounded */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* tambah bayangan */
+    transition: transform 0.3s ease; /* animasi halus */
+}
+
+.menu-item img:hover {
+    transform: scale(1.05); /* efek zoom saat hover */
+}
+
+/* Jam operasional */
+#hours {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#hours p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #ce3e92;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
